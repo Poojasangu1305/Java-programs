@@ -1,0 +1,18 @@
+//Write a Java program to create a class called Shape with a method called getArea(). Create a subclass called Rectangle that overrides the getArea() method to calculate the area of a recta
+class Shape {
+    public void getarea() {
+        System.out.println("area cal");
+    }
+    
+    static class Rectangle extends Shape {  // Make this static
+        public void getarea() {
+            int x = 10, y = 20;
+            System.out.println(x * y);
+        }
+    }
+    
+    public static void main(String[] args) {
+        Rectangle area = new Rectangle();  // Corrected class name to start with uppercase
+        area.getarea();
+    }
+}
